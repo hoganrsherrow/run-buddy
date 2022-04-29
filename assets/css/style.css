@@ -205,6 +205,9 @@ section {
     flex-wrap: wrap;
     align-items: center;
 }
+.step-text {
+    flex: 12;
+}
 .step-text p {
     color: #39a6b2;
     font-size: 18px;
