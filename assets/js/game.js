@@ -63,6 +63,12 @@ var fight = function (enemyName) {
     }
 };
 for (var i = 0; i < enemyNames.length; i++) {
-    enemyHealth = 50;
+    if(playerHealth > 0) {
+        // let player know what round they are in
+        alert("Welcome to Robot Gladiators! Round " + (i+1));
+
+        // reset enemyHealth before starting a new fight
+        enemyHealth = 50;
+    }
     fight(enemyNames[i]);
 }
